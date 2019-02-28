@@ -16,7 +16,7 @@ class Web_test_login(BaseTestCase):
             self.driver.get(url)
             logger.info("成功打开网站>" + url)
         except Exception as e:
-            logger.error("打开网站失败>" + url % e)
+            logger.error("打开网站失败>" + url, e)
             raise
 
     # 验证网站标题
