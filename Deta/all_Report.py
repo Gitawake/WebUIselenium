@@ -73,7 +73,7 @@ def send_yagmail(report_file):
         yag.send(['8888888@qq.com', '99999999@qq.com'], '邮件主题', contents, report_file)
         Basic_class.logger.info("发送邮箱成功...")
     except Exception as e:
-        Basic_class.logger.error("发送邮箱失败...", e)
+        Basic_class.logger.error(e)
         raise
 
 
